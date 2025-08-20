@@ -58,9 +58,12 @@ const Contact = () => {
                           size={24}
                         />
                         <div>
-                          <h6 className="mb-1 fw-bold">Visuvasapuram Branch</h6>
+                          <h6 className="mb-1 fw-bold">
+                            Viswanathapuram Branch
+                          </h6>
                           <span>
-                            SSD Education, Visuvasapuram, Bustop, Coimbatore-35
+                            SSD Education, Viswanathapuram, Bustop,
+                            Coimbatore-35
                           </span>
                         </div>
                       </div>
