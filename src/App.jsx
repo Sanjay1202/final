@@ -1,11 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
@@ -13,12 +8,17 @@ import Courses from "./courses";
 import Features from "./Features";
 import Contact from "./Contact";
 import SsdLogo from "./logo/logo-bg.png";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   return (
     <div>
       {/* Navigation */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        style={{ backgroundColor: "#263238" }}
+      >
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">
             <img
@@ -68,6 +68,16 @@ function App() {
           </div>
         </div>
       </nav>
+      {/* Divider line below navbar only on Home page */}
+      {location.pathname === "/" && (
+        <div
+          style={{
+            height: "2px",
+            background: "linear-gradient(to right, #BDBDBD, #263238)",
+            marginTop: 56,
+          }}
+        ></div>
+      )}
 
       {/* Page Routing */}
       <Routes>
