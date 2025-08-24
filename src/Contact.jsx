@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   MapPin,
   Phone,
@@ -43,7 +44,7 @@ const Contact = () => {
               <div className="row g-4 align-items-stretch">
                 <div className="col-md-6 border-end d-flex flex-column justify-content-center">
                   <div className="mb-4 text-center text-md-start">
-                    <h2 className="h1 mb-3 text-primary">Get in Touch</h2>
+                    <h2 className="h1 mb-3 text-gray">Get in Touch</h2>
                     <p className="lead text-muted mb-4">
                       Have questions? We'd love to hear from you.
                       <br />
@@ -54,7 +55,7 @@ const Contact = () => {
                     <div className="w-100">
                       <div className="mb-3 d-flex align-items-start">
                         <MapPin
-                          className="text-primary flex-shrink-0 me-3 mt-1"
+                          className="text-gray flex-shrink-0 me-3 mt-1"
                           size={24}
                         />
                         <div>
@@ -69,7 +70,7 @@ const Contact = () => {
                       </div>
                       <div className="mb-3 d-flex align-items-center">
                         <Phone
-                          className="text-primary flex-shrink-0 me-3"
+                          className="text-gray flex-shrink-0 me-3"
                           size={24}
                         />
                         <a
@@ -81,7 +82,7 @@ const Contact = () => {
                       </div>
                       <div className="mb-3 d-flex align-items-center">
                         <Mail
-                          className="text-primary flex-shrink-0 me-3"
+                          className="text-gray flex-shrink-0 me-3"
                           size={24}
                         />
                         <a
@@ -93,7 +94,7 @@ const Contact = () => {
                       </div>
                       <div className="mb-3 d-flex align-items-start">
                         <MapPin
-                          className="text-success flex-shrink-0 me-3 mt-1"
+                          className="text-danger flex-shrink-0 me-3 mt-1"
                           size={24}
                         />
                         <div>
@@ -105,7 +106,7 @@ const Contact = () => {
                       </div>
                       <div className="mb-3 d-flex align-items-center">
                         <Phone
-                          className="text-success flex-shrink-0 me-3"
+                          className="text-danger flex-shrink-0 me-3"
                           size={24}
                         />
                         <a
@@ -117,7 +118,7 @@ const Contact = () => {
                       </div>
                       <div className="mb-3 d-flex align-items-center">
                         <Mail
-                          className="text-success flex-shrink-0 me-3"
+                          className="text-danger flex-shrink-0 me-3"
                           size={24}
                         />
                         <a
@@ -130,26 +131,19 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="mb-4 d-flex align-items-center">
-                    <Clock
-                      className="text-primary flex-shrink-0 me-3"
-                      size={24}
-                    />
+                    <Clock className="text- flex-shrink-0 me-3" size={24} />
                     <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
                   </div>
                   <div>
                     <h6 className="mb-2">Follow Us</h6>
                     <a
                       href="#"
-                      className="text-primary me-3"
+                      className="text-gray me-3"
                       aria-label="Facebook"
                     >
                       <Facebook size={24} />
                     </a>
-                    <a
-                      href="#"
-                      className="text-primary me-3"
-                      aria-label="Twitter"
-                    >
+                    <a href="#" className="text-gray me-3" aria-label="Twitter">
                       <Twitter size={24} />
                     </a>
                     <a
@@ -233,7 +227,8 @@ const Contact = () => {
                     </div>
                     <button
                       type="submit"
-                      className="btn btn-primary btn-lg w-100 mt-2 shadow-sm"
+                      className="btn btn-lg w-100 mt-2 shadow-sm"
+                      style={{ backgroundColor: "#263238", color: "white" }}
                     >
                       Send Message via WhatsApp
                     </button>

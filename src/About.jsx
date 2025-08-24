@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import {
   Users,
   BookOpen,
@@ -166,7 +167,12 @@ const About = () => (
               </p>
               <Link
                 to="/courses"
-                className="btn btn-primary btn-lg px-5 py-3 d-inline-flex align-items-center"
+                id="explore-courses-btn"
+                className="btn btn-lg px-5 py-3 d-inline-flex align-items-center "
+                style={{
+                  backgroundColor: "#263238",
+                  color: "white",
+                }}
               >
                 Explore Our Courses <ArrowRight className="ms-2" size={20} />
               </Link>

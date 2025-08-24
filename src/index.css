@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* About Page Explore Button Hover */
+#explore-courses-btn:hover {
+  background: #263238;
+  color: #ff5252 !important;
+  box-shadow: 0 4px 16px rgba(255, 82, 82, 0.18);
+
+  border: none;
+}
 
 /* Navbar Styling */
 .navbar {
