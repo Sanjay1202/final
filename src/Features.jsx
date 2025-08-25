@@ -7,6 +7,7 @@ import {
   Award,
   PlayCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const featuresData = [
   {
@@ -54,34 +55,47 @@ const featuresData = [
 ];
 
 const Features = () => (
-  <section id="features" className="py-5 bg-light">
-    <div className="container">
-      <div className="text-center mb-5">
-        <h2 className="h1 mb-3">Why Choose SSD Education?</h2>
-        <p className="lead text-muted">
-          We provide a comprehensive learning experience designed for your
-          success.
-        </p>
-      </div>
-      <div className="row justify-content-center">
-        {featuresData.map((feature) => (
-          <div className="col-lg-4 col-md-6 mb-4" key={feature.title}>
-            <div className="card h-100 text-center border-0 shadow-sm feature-card">
-              <div className="card-body p-4">
-                <div
-                  className={`feature-icon bg-${feature.color}-soft text-${feature.color} rounded-circle d-inline-flex align-items-center justify-content-center mb-4`}
-                >
-                  <feature.icon size={32} />
+  <>
+    <Helmet>
+      <title>Features - SSD Education</title>
+      <meta
+        name="description"
+        content="The SSD education has many features and unique way of developing technical skills in various sectors of IT, Marketing, and Tally, etc... We are offering the following benifits. By joining us you can enlight your future in the growing IT industry."
+      />
+      <meta
+        name="keywords"
+        content="online courses Coimbatore, internships in Coimbatore, placement training, skill development, IT training Coimbatore"
+      />
+    </Helmet>
+    <section id="features" className="py-5 bg-light">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="h1 mb-3">Why Choose SSD Education?</h2>
+          <p className="lead text-muted">
+            We provide a comprehensive learning experience designed for your
+            success.
+          </p>
+        </div>
+        <div className="row justify-content-center">
+          {featuresData.map((feature) => (
+            <div className="col-lg-4 col-md-6 mb-4" key={feature.title}>
+              <div className="card h-100 text-center border-0 shadow-sm feature-card">
+                <div className="card-body p-4">
+                  <div
+                    className={`feature-icon bg-${feature.color}-soft text-${feature.color} rounded-circle d-inline-flex align-items-center justify-content-center mb-4`}
+                  >
+                    <feature.icon size={32} />
+                  </div>
+                  <h5 className="fw-bold mb-3">{feature.title}</h5>
+                  <p className="text-muted mb-0">{feature.description}</p>
                 </div>
-                <h5 className="fw-bold mb-3">{feature.title}</h5>
-                <p className="text-muted mb-0">{feature.description}</p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 );
 
 export default Features;

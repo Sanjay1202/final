@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from "react-helmet";
 
 const Courses = () => {
   const coursesData = [
@@ -115,6 +116,17 @@ const Courses = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Courses - SSD Education</title>
+        <meta
+          name="description"
+          content="Trending Courses are provided in our institute. The online and offline modes are available bases on the requirements. The one-on-one mentorships is provided and real time doubt clearing secction."
+        />
+        <meta
+          name="keywords"
+          content="online courses Coimbatore, internships in Coimbatore, placement training, skill development, IT training Coimbatore"
+        />
+      </Helmet>
       <section id="courses" className="py-5 bg-light">
         <div className="container">
           <div className="text-center mb-5">
