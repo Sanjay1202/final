@@ -110,9 +110,6 @@ function App() {
                 <a href="#" className="text-white" aria-label="Facebook">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="text-white" aria-label="Twitter">
-                  <Twitter size={20} />
-                </a>
                 <a href="#" className="text-white" aria-label="LinkedIn">
                   <Linkedin size={20} />
                 </a>
