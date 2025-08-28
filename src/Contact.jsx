@@ -70,37 +70,13 @@ const Contact = () => {
                           />
                           <div>
                             <h6 className="mb-1 fw-bold">
-                              Viswanathapuram Branch
+                              Visuvasapuram Branch
                             </h6>
                             <span>
-                              SSD Education, Viswanathapuram, Bustop,
+                              SSD Education, Visuvasapuram, Bustop,
                               Coimbatore-35
                             </span>
                           </div>
-                        </div>
-                        <div className="mb-3 d-flex align-items-center">
-                          <Phone
-                            className="text-gray flex-shrink-0 me-3"
-                            size={24}
-                          />
-                          <a
-                            href="tel:+919488294500"
-                            className="text-body text-decoration-none"
-                          >
-                            +91 9488294500
-                          </a>
-                        </div>
-                        <div className="mb-3 d-flex align-items-center">
-                          <Mail
-                            className="text-gray flex-shrink-0 me-3"
-                            size={24}
-                          />
-                          <a
-                            href="mailto:swagatskilldevelopment@gmail.com?subject=Inquiry%20from%20Website"
-                            className="text-body text-decoration-none"
-                          >
-                            swagatskilldevelopment@gmail.com
-                          </a>
                         </div>
                         <div className="mb-3 d-flex align-items-start">
                           <MapPin
@@ -117,6 +93,19 @@ const Contact = () => {
                             </span>
                           </div>
                         </div>
+                        <div className="mb-3 d-flex align-items-center">
+                          <Phone
+                            className="text-gray flex-shrink-0 me-3"
+                            size={24}
+                          />
+                          <a
+                            href="tel:+919488294500"
+                            className="text-body text-decoration-none"
+                          >
+                            +91 9488294500
+                          </a>
+                        </div>
+
                         <div className="mb-3 d-flex align-items-center">
                           <Phone
                             className="text-danger flex-shrink-0 me-3"
