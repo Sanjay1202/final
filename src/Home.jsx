@@ -52,7 +52,7 @@ const Home = () => (
                 src={SsdLogo}
                 alt="SSD Edutech Logo"
                 className="img-fluid rounded-circle shadow-lg border border-5 border-white mx-auto d-block hero-image-animation d-flex justify-content-center"
-                style={{ maxWidth: "400px" }}
+                style={{ maxWidth: "300px" }}
               />
             </div>
           </div>
